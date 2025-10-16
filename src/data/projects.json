@@ -1,0 +1,190 @@
+{
+  "chromeExtensions": [
+    {
+      "name": "Zeer Praktische Klok Versie 1.2",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/very-practical-clock/ncooonkkjoeikgkbbljefnmhldpgdpdn",
+      "status": "active"
+    },
+    {
+      "name": "Battery Percentage Versie 1.0",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/bcknfhofonlfillmlonppglflhgdbeoa",
+      "status": "active"
+    },
+    {
+      "name": "New Tab Organizer 1.1",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/new-tab-organizer/llhggelkoodddbgmnmfplcmchbbkkjpk",
+      "status": "active"
+    },
+    {
+      "name": "Google AI Studio - File Reader",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/google-ai-studio-file-rea/holadmfpcclmpmkdkmcanifihneflfop?authuser=0&hl=en&pli=1",
+      "status": "active"
+    },
+    {
+      "name": "NotebookLM Source Uploader Versie 1.2",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/notebooklm-source-uploade/cflibmhmbbbnkjhobikinkkabplcijdj",
+      "status": "active"
+    },
+    {
+      "name": "YouTube Playlist Collector",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/youtube-playlist-collecto/noadbldckkkcfkhghjehpdldgppbggde",
+      "status": "active"
+    },
+    {
+      "name": "Youtube Rightclick",
+      "description": "Een Chrome extensie.",
+      "githubLink": "",
+      "liveLink": "https://chromewebstore.google.com/detail/youtube-rightclick/dceebkineaajkfponfimilfebkgbcchh",
+      "status": "active"
+    }
+  ],
+  "githubProjects": [
+    {
+      "name": "URL-pulse",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/url-pulse",
+      "liveLink": "https://kareltestspecial.github.io/url-pulse/",
+      "status": "inactive"
+    },
+    {
+      "name": "Newtab Startpage Dashboard",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/startpage",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "Custom Data Tree",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/custom-data-tree/",
+      "liveLink": "https://kareltestspecial.github.io/custom-data-tree/",
+      "status": "active"
+    },
+    {
+      "name": "Longevity Food Health data tree",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/LFH/",
+      "liveLink": "https://kareltestspecial.github.io/LFH/",
+      "status": "active"
+    },
+    {
+      "name": "Link-in-bio-Hub",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/link-in-bio-hub-repo",
+      "liveLink": "https://linkinbiohub.web.app",
+      "status": "inactive"
+    },
+    {
+      "name": "AI Studio File Reader",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/aistudioreader",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "NotebookLM Source Uploader",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/notebooklm-source-loader",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "Battery Percentage",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/battery-percentage",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "Zeer Praktische Klok",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/very-practical-clock",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "YouTube Rightclick CSV",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/youtube-rightclick-csv",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "YouTube Playlist CSV",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/youtube-playlist-csv",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "YouTube Playlist Collector",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/youtube-playlist-collector",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "YouTube Playlist 2-Way Collector",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/youtube-2way-collector",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "OCR combi",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/KarelTestSpecial/ocr-combi-addon",
+      "liveLink": "",
+      "status": ""
+    },
+    {
+      "name": "Vegan BioTech Report",
+      "description": "Een GitHub project.",
+      "githubLink": "https://github.com/profdrkdc/Vegan-BioTech-Report",
+      "liveLink": "https://profdrkdc.github.io/Vegan-BioTech-Report/",
+      "status": "active"
+    }
+  ],
+  "websites": [
+    {
+      "name": "Portfolio",
+      "description": "Mijn portfolio website.",
+      "githubLink": "",
+      "liveLink": "https://kareltestspecial.github.io/portfolio/",
+      "status": "active"
+    },
+    {
+      "name": "AutiWiki",
+      "description": "Een wiki over autisme.",
+      "githubLink": "",
+      "liveLink": "https://autiwiki.com",
+      "status": "active"
+    },
+    {
+      "name": "Autiwiki (Odoo)",
+      "description": "Een wiki over autisme, gebouwd met Odoo.",
+      "githubLink": "",
+      "liveLink": "https://autiwiki.odoo.com",
+      "status": "active"
+    },
+    {
+      "name": "Longevity & Health Optimization",
+      "description": "L&H door Manus.im",
+      "githubLink": "",
+      "liveLink": "https://longevity-aaczmm.manus.space/",
+      "status": "active"
+    }
+  ]
+}
