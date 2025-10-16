@@ -48,17 +48,13 @@ function App() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        // Dynamically import the markdown file as a raw text module
-        const cvModule = await import(`./assets/cv.${lang}.md`);
-        const cvResponse = await fetch(cvModule.default);
+        const cvResponse = await fetch(`/cv.${lang}.md`);
         const cvText = await cvResponse.text();
         const { data, content } = matter(cvText);
         // @ts-ignore
         setCvData({ ...data, content });
 
-        // Dynamically import the tsv file as a raw text module
-        const projectsModule = await import(`./assets/projects.${lang}.tsv`);
-        const projectsResponse = await fetch(projectsModule.default);
+        const projectsResponse = await fetch(`/projects.${lang}.tsv`);
         const projectsText = await projectsResponse.text();
 
         const results = Papa.parse(projectsText, {
@@ -107,7 +103,7 @@ function App() {
     return (
       <div className="container text-center mt-5">
         <h1>Error</h1>
-        <p className="lead">Could not load CV data. Please check if the file `src/assets/cv.{lang}.md` exists and is accessible.</p>
+        <p className="lead">Could not load CV data. Please check if the file `public/cv.{lang}.md` exists and is accessible.</p>
       </div>
     );
   }
