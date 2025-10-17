@@ -50,7 +50,7 @@ function App() {
       try {
         const cvResponse = await fetch(`/cv.${lang}.md`);
         const cvText = await cvResponse.text();
-        const { data, content } = matter(cvText);
+        const { data, content } = matter(cvText, { delimiters: '~~~' });
         // @ts-ignore
         setCvData({ ...data, content });
 

@@ -1,4 +1,4 @@
----
+~~~
 name: Karel Decherf
 contact:
   email: karel.decherf@gmail.com
@@ -54,7 +54,7 @@ skills:
     Workspace, MS Office, Odoo, Notion  
   'Besturingssystemen::': 'Windows, Linux, ChromeOS'
   'Netwerkprotocollen:': 'IIS, WINS, DHCP, DNS'
----
+~~~
 ### **Profiel**
 
 Gedreven en analytische IT-professional met een levenslange passie voor programmeren en een solide achtergrond in webontwikkeling. Ervaren in een breed scala aan technologieën, waaronder JavaScript, TypeScript, Python en SQL. Ik demonstreer actuele vaardigheden en initiatief door de continue ontwikkeling en publicatie van diverse projecten, waaronder meerdere Chrome Web Store-extensies en open-source code op GitHub. Na een periode van inactiviteit, ben ik dankzij de technologische vooruitgang weer volledig inzetbaar en gemotiveerd om mijn probleemoplossend vermogen en technische expertise bij te dragen aan een vooruitstrevend team.
