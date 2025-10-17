@@ -1,8 +1,17 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const fs = require('fs');
-const path = require('path');
-const matter = require('gray-matter');
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// DEFINIEER HET ESM-EQUIVALENT VAN __dirname EN __filename
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename); 
+// Vanaf hier kunt u __dirname gebruiken zoals u gewend bent.
 
 const app = express();
 const port = 4000;

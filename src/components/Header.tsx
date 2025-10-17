@@ -26,10 +26,10 @@ const Header: React.FC<HeaderProps> = ({ setLang, lang, contact }) => {
               {contact && (
                 <>
                   <li className="nav-item">
-                    <a className="nav-link" href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className="nav-link" href={`${contact.linkedin}`} target="_blank" rel="noopener noreferrer">LinkedIn</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href={`https://${contact.github}`} target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a className="nav-link" href={`${contact.github}`} target="_blank" rel="noopener noreferrer">GitHub</a>
                   </li>
                 </>
               )}
