@@ -48,13 +48,13 @@ function App() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const cvResponse = await fetch(`/cv.${lang}.md`);
+        const cvResponse = await fetch(`${import.meta.env.BASE_URL}cv.${lang}.md`);
         const cvText = await cvResponse.text();
         const { data, content } = matter(cvText, { delimiters: '~~~' });
         // @ts-ignore
         setCvData({ ...data, content });
 
-        const projectsResponse = await fetch(`/projects.${lang}.tsv`);
+        const projectsResponse = await fetch(`${import.meta.env.BASE_URL}projects.${lang}.tsv`);
         const projectsText = await projectsResponse.text();
 
         const results = Papa.parse(projectsText, {
