@@ -4,7 +4,7 @@ contact:
   email: karel.decherf@gmail.com
   linkedin: 'https://www.linkedin.com/in/karel-decherf-8212a9221/'
   github: 'https://github.com/KarelTestSpecial'
-  address: 
+  address: ''
 workExperience:
   - role: Webontwikkelaar
     company: 'Visitronics NV, Leuven'
