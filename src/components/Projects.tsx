@@ -45,7 +45,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, translations }) => {
                           <a href={project.liveLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">{translations.viewExtension}</a>
                         )}
                         {project.githubLink && (
-                          <a href={project.githubLink} className="btn btn-secondary ms-2" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
+                          <a href={project.githubLink} className="btn btn-success ms-2" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
                         )}
                       </div>
                     </div>
@@ -69,7 +69,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, translations }) => {
                       <p className="card-text">{project.description}</p>
                       <div className="mt-auto">
                         {project.githubLink && (
-                          <a href={project.githubLink} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
+                          <a href={project.githubLink} className="btn btn-success" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
                         )}
                         {project.liveLink && project.status === 'active' && (
                           <a href={project.liveLink} className="btn btn-primary ms-2" target="_blank" rel="noopener noreferrer">{translations.viewDemo}</a>
@@ -99,7 +99,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, translations }) => {
                           <a href={website.liveLink} className="btn btn-primary" target="_blank" rel="noopener noreferrer">{translations.visitWebsite}</a>
                         )}
                         {website.githubLink && (
-                          <a href={website.githubLink} className="btn btn-secondary ms-2" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
+                          <a href={website.githubLink} className="btn btn-success ms-2" target="_blank" rel="noopener noreferrer">{translations.viewGithub}</a>
                         )}
                       </div>
                     </div>

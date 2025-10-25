@@ -43,6 +43,28 @@ export default defineConfig([
 ])
 ```
 
+## Build and Deployment
+
+To build the website for production and deploy it to GitHub Pages, follow these steps:
+
+1.  **Install Dependencies:**
+    Make sure you have all the necessary packages installed.
+    ```bash
+    pnpm install
+    ```
+
+2.  **Build the Project:**
+    This command bundles the application into static files for production.
+    ```bash
+    pnpm run build
+    ```
+
+3.  **Deploy to GitHub Pages:**
+    This command will deploy the contents of the `dist` directory to the `gh-pages` branch.
+    ```bash
+    pnpm run deploy
+    ```
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js
