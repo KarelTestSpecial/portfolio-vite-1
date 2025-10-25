@@ -1,95 +1,47 @@
-# React + TypeScript + Vite
+# Portfolio Website (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a portfolio website built with React, TypeScript, and Vite. It provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-## Build and Deployment
-
-To build the website for production and deploy it to GitHub Pages, follow these steps:
+To get started with this project, follow these steps:
 
 1.  **Install Dependencies:**
-    Make sure you have all the necessary packages installed.
+    This project uses `pnpm` as the package manager. To install the necessary packages, run the following command in your terminal:
     ```bash
     pnpm install
     ```
 
-2.  **Build the Project:**
-    This command bundles the application into static files for production.
+2.  **Run the Development Server:**
+    To start the local development server with Hot Module Replacement (HMR), run:
     ```bash
-    pnpm run build
+    pnpm run dev
     ```
+    You can then view the website in your browser at the address provided in the terminal (usually `http://localhost:5173`).
 
-3.  **Deploy to GitHub Pages:**
-    This command will deploy the contents of the `dist` directory to the `gh-pages` branch.
-    ```bash
-    pnpm run deploy
-    ```
+## Available Scripts
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project comes with the following scripts:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-   `pnpm run dev`: Starts the development server.
+-   `pnpm run build`: Bundles the application into static files for production in the `dist` directory.
+-   `pnpm run deploy`: Deploys the contents of the `dist` directory to the `gh-pages` branch on GitHub.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Advanced Configuration
+
+### ESLint
+
+If you are developing a production application, you can expand the ESLint configuration to enable type-aware lint rules. For more information, see the comments in the `eslint.config.js` file.
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules.
+
+### React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+### Vite Plugins
+
+Currently, two official plugins are available:
+
+-   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh.
+-   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh.
