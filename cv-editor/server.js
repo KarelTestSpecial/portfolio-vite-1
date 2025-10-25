@@ -19,7 +19,7 @@ const port = 4000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const CV_DIR = path.join(__dirname, '..', 'public', 'assets');
+const CV_DIR = path.join(__dirname, '..', 'public');
 const HISTORY_DIR = path.join(__dirname, '..', 'CV_HISTORY');
 
 // Ensure directories exist
@@ -31,7 +31,7 @@ if (!fs.existsSync(HISTORY_DIR)) fs.mkdirSync(HISTORY_DIR, { recursive: true });
 // Endpoint to get CV data
 app.get('/api/cv/:lang', (req, res) => {
   const { lang } = req.params;
-  const filePath = path.join(CV_DIR, `cv.${lang}.txt`);
+  const filePath = path.join(CV_DIR, `cv.${lang}.md`);
   if (fs.existsSync(filePath)) {
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContent, { delimiters: '~~~' });
@@ -45,7 +45,7 @@ app.get('/api/cv/:lang', (req, res) => {
 app.get('/api/history/:lang', (req, res) => {
   const { lang } = req.params;
   const files = fs.readdirSync(HISTORY_DIR)
-    .filter(file => file.startsWith(`cv.${lang}.`) && file.endsWith('.txt'))
+    .filter(file => file.startsWith(`cv.${lang}.`) && file.endsWith('.md'))
     .sort()
     .reverse();
   res.json(files);
@@ -55,13 +55,13 @@ app.get('/api/history/:lang', (req, res) => {
 app.post('/api/cv/:lang', (req, res) => {
   const { lang } = req.params;
   const cvData = req.body;
-  const filePath = path.join(CV_DIR, `cv.${lang}.txt`);
+  const filePath = path.join(CV_DIR, `cv.${lang}.md`);
   const { content, ...yamlData } = cvData;
 
   // Archive current version before overwriting
   if (fs.existsSync(filePath)) {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    const historyPath = path.join(HISTORY_DIR, `cv.${lang}.${timestamp}.txt`);
+    const historyPath = path.join(HISTORY_DIR, `cv.${lang}.${timestamp}.md`);
     fs.copyFileSync(filePath, historyPath);
   }
 
