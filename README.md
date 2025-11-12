@@ -1,49 +1,128 @@
 # Portfolio Website (React + TypeScript + Vite)
 
-**Live Website:** [https://kareltestspecial.github.io/portfolio-vite-1/](https://kareltestspecial.github.io/portfolio-vite-1/)
+Een persoonlijk portfolio gebouwd met React, Vite en TypeScript. De content wordt beheerd via simpele Markdown en TSV-bestanden.
 
-This is a portfolio website built with React, TypeScript, and Vite. It provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Website:** [https://KarelTestSpecial.github.io/portfolio-vite-1](https://KarelTestSpecial.github.io/portfolio-vite-1)
 
-## Getting Started
+---
 
-To get started with this project, follow these steps:
+## Inhoudsopgave
 
-1.  **Install Dependencies:**
-    This project uses `pnpm` as the package manager. To install the necessary packages, run the following command in your terminal:
+- [Lokale Ontwikkeling](#lokale-ontwikkeling)
+- [Content Beheren](#content-beheren)
+  - [Methode 1: Handmatig Aanpassen](#methode-1-handmatig-aanpassen)
+  - [Methode 2: De Ingebouwde Editor](#methode-2-de-ingebouwde-editor)
+- [Publiceren (Deployment)](#publiceren-deployment)
+- [Beschikbare Scripts](#beschikbare-scripts)
+
+---
+
+## Lokale Ontwikkeling
+
+Volg deze stappen om de website lokaal op te zetten en te draaien.
+
+**Vereisten:**
+- Node.js
+- pnpm (of een andere package manager zoals npm of yarn)
+
+**Stappen:**
+
+1.  **Installeer de dependencies:**
     ```bash
     pnpm install
     ```
 
-2.  **Run the Development Server:**
-    To start the local development server with Hot Module Replacement (HMR), run:
+2.  **Start de development server:**
     ```bash
-    pnpm run dev
+    pnpm dev
     ```
-    You can then view the website in your browser at the address provided in the terminal (usually `http://localhost:5173`).
+    De website is nu lokaal beschikbaar, meestal op `http://localhost:5173`. De server houdt wijzigingen in de gaten en ververst de site automatisch (Hot Module Replacement).
 
-## Available Scripts
+---
 
-This project comes with the following scripts:
+## Content Beheren
 
--   `pnpm run dev`: Starts the development server.
--   `pnpm run build`: Bundles the application into static files for production in the `dist` directory.
--   `pnpm run deploy`: Deploys the contents of the `dist` directory to the `gh-pages` branch on GitHub.
+De inhoud van de website (CV en projecten) wordt beheerd via bestanden in de `/public` map. Er zijn twee manieren om deze aan te passen.
 
-## Advanced Configuration
+### Methode 1: Handmatig Aanpassen
 
-### ESLint
+Je kunt de bestanden direct in je code-editor aanpassen. Na het opslaan hoef je alleen de browser te verversen om de wijzigingen te zien.
 
-If you are developing a production application, you can expand the ESLint configuration to enable type-aware lint rules. For more information, see the comments in the `eslint.config.js` file.
+#### CV (`/public/cv.[en|nl].md`)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules.
+Deze bestanden combineren YAML en Markdown.
 
-### React Compiler
+-   **YAML-gedeelte (bovenaan, tussen `~~~`):** Gestructureerde data zoals werkervaring, opleiding en contactgegevens.
+-   **Markdown-gedeelte (onderaan):** De doorlopende "Over Mij" tekst, waar je standaard Markdown-opmaak kunt gebruiken.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```yaml
+~~~
+name: "Jouw Naam"
+workExperience:
+  - role: "Functie"
+    company: "Bedrijf"
+    period: "Jaar - Jaar"
+    description: "Beschrijving van je werk."
+~~~
 
-### Vite Plugins
+Hier begint de vrije tekst voor je profiel...
+```
 
-Currently, two official plugins are available:
+#### Projecten (`/public/projects.[en|nl].tsv`)
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh.
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh.
+Dit zijn **Tab-Separated Values** (TSV) bestanden. Elke regel is een project en de kolommen worden gescheiden door een **Tab**.
+
+**Kolommen:**
+`Type` `Naam` `Beschrijving` `GitHub Link` `Live Link` `Status`
+
+-   **Type:** Wordt gebruikt om projecten te groeperen (bv. `websites`, `githubProjects`).
+-   **Status:** Zet op `active` om een link naar de live-versie te tonen.
+
+### Methode 2: De Ingebouwde Editor
+
+Voor eenvoudigere aanpassingen is er een `cv-editor`.
+
+1.  **Start de servers:** Je hebt twee terminals nodig.
+    -   Terminal 1: `pnpm dev` (de hoofdwebsite)
+    -   Terminal 2: `pnpm run edit-cv` (de editor-backend)
+
+2.  **Open de editor:** Navigeer in je browser naar `http://localhost:4000`.
+
+3.  **Gebruik:** Kies een bestand, pas de inhoud aan en klik op "Save". De wijzigingen worden direct opgeslagen en zijn zichtbaar na het herladen van de hoofdwebsite.
+
+---
+
+## Publiceren (Deployment)
+
+De website wordt gepubliceerd op GitHub Pages. Het proces wordt beheerd door een script, niet door een `.github/workflows` bestand.
+
+**Stappen om live te zetten:**
+
+1.  **Commit je wijzigingen:**
+    ```bash
+    git add .
+    git commit -m "Content bijgewerkt"
+    ```
+
+2.  **Push naar GitHub:**
+    ```bash
+    git push origin main
+    ```
+
+3.  **Draai het deploy-script:**
+    ```bash
+    pnpm deploy
+    ```
+
+**Hoe werkt dit?**
+Het `pnpm deploy` commando voert `gh-pages -d dist` uit. Dit script bouwt eerst de site, en pusht vervolgens de inhoud van de `dist` map naar de `gh-pages` branch op GitHub. GitHub Pages is ingesteld om vanaf die branch te publiceren, wat telkens een nieuwe "deployment" triggert.
+
+---
+
+## Beschikbare Scripts
+
+-   `pnpm dev`: Start de lokale development server.
+-   `pnpm build`: Maakt een productie-build in de `dist` map.
+-   `pnpm edit-cv`: Start de backend voor de content-editor.
+-   `pnpm deploy`: Publiceert de website naar GitHub Pages.
+-   `pnpm lint`: Controleert de code op stijl- en syntaxfouten.
