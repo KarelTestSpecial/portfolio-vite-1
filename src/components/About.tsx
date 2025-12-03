@@ -38,7 +38,7 @@ const About: React.FC<AboutProps> = ({ cvData, translations }) => {
                   <strong>{job.role}</strong> @ {job.company}
                   <br />
                   <small className="text-muted">{job.period}</small>
-                  <p>{job.description}</p>
+                  <ReactMarkdown>{job.description}</ReactMarkdown>
                 </li>
               ))}
             </ul>
