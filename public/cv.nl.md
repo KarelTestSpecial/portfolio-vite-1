@@ -6,6 +6,12 @@ contact:
   github: 'https://github.com/KarelTestSpecial'
   address: ''
 workExperience:
+  - role: ''
+    company: ''
+    period: 2001 - 2025
+    description: >-
+      **Fabrieksarbeider** (Pasec), **Keukenhulp** (Paviljoen C),
+      **Klerenhersteller** (De Haven), **Kok** (FPC)
   - role: Webontwikkelaar
     company: 'Visitronics NV, Leuven'
     period: 01/2001 – 08/2001
@@ -15,29 +21,14 @@ workExperience:
 
       * Toepassen van een reeks webtechnologieën om te voldoen aan specifieke
       functionele eisen.
-  - role: Andere Functies
+  - role: ''
     company: ''
     period: 04/1994 – 02/1997
     description: >-
       Diverse rollen vervuld als **Koerier**, **Uitzendkracht** (Randstad,
-      Brussel), **Keukenhulp** (Restaura, Zaventem) en **Tele-enquêteur**
-      (Tele-Performance), waaruit een sterke werkethiek en aanpassingsvermogen
-      blijkt.  
-  - role: Magazijnier
-    company: 'IKEA, Ternat'
-    period: 03/1998 – 01/2001
-    description: >-
-
-      * Verantwoordelijk voor voorraadbeheer en de verwerking van inkomende en
-      uitgaande goederen.  
-
-      * Optimaliseren van de magazijnwerking voor maximale efficiëntie.
-  - role: ''
-    company: ''
-    period: 2001 \ 2025
-    description: >-
-      **Fabrieksarbeider** (Pasec), **Keukenhulp** (Paviljoen C),
-      **Klerenhersteller** (De Haven), **Kok** (FPC)
+      Brussel), **Magazijnier** (IKEA, Ternat), **Keukenhulp** (Restaura,
+      Zaventem) en **Tele-enquêteur** (Tele-Performance), waaruit een sterke
+      werkethiek en aanpassingsvermogen blijkt.
 skills:
   'AI & Automatisering:': >-
     Google Gemini, OpenAI ChatGPT, Anthropic Claude, LangChain, Perplexity,
