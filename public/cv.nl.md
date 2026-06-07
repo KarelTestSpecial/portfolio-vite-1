@@ -6,12 +6,6 @@ contact:
   github: 'https://github.com/KarelTestSpecial'
   address: ''
 workExperience:
-  - role: ''
-    company: ''
-    period: 2001 - 2025
-    description: >-
-      **Fabrieksarbeider** (Pasec), **Keukenhulp** (Paviljoen C),
-      **Klerenhersteller** (De Haven), **Kok** (FPC)
   - role: Webontwikkelaar
     company: 'Visitronics NV, Leuven'
     period: 01/2001 – 08/2001
@@ -21,11 +15,13 @@ workExperience:
 
       * Toepassen van een reeks webtechnologieën om te voldoen aan specifieke
       functionele eisen.
-  - role: ''
+  - role: Overige functies
     company: ''
-    period: 04/1994 – 02/1997
+    period: 1994 - 2025
     description: >-
-      Diverse rollen vervuld als **Koerier**, **Uitzendkracht** (Randstad,
+      Diverse rollen vervuld als **Fabrieksarbeider** (Pasec),
+      **Keukenhulp** (Paviljoen C), **Klerenhersteller** (De Haven),
+      **Kok** (FPC), **Koerier** (Pizza City), **Uitzendkracht** (Randstad,
       Brussel), **Magazijnier** (IKEA, Ternat), **Keukenhulp** (Restaura,
       Zaventem) en **Tele-enquêteur** (Tele-Performance), waaruit een sterke
       werkethiek en aanpassingsvermogen blijkt.

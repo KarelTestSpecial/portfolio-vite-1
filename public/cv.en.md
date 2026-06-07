@@ -6,12 +6,6 @@ contact:
   github: 'https://github.com/KarelTestSpecial'
   address: ''
 workExperience:
-  - role: ''
-    company: ''
-    period: 2001 - 2025
-    description: >-
-      **Factory Worker** (Pasec), **Kitchen Help** (Pavilion C),
-      **Clothing Repairer** (De Haven), **Cook** (FPC)
   - role: Web Developer
     company: 'Visitronics NV, Leuven'
     period: 01/2001 – 08/2001
@@ -19,13 +13,17 @@ workExperience:
       * Developing and maintaining custom web applications for various clients.
 
       * Applying a range of web technologies to meet specific functional requirements.
-  - role: ''
+  - role: Other positions
     company: ''
-    period: 1994 – 1997
+    period: 1994 - 2025
     description: >-
-      Fulfilled various roles as a **Courier**, **Temporary Worker** (Randstad,
-      Brussels), **Warehouse Worker** (IKEA, Ternat), **Kitchen Help**
-      (Restaura, Zaventem) and **Tele-interviewer** (Tele-Performance),
+      Fulfilled various roles as **Factory Worker** (Pasec),
+      **Kitchen Help** (Pavilion C), **Clothing Repairer** (De Haven),
+      **Cook** (FPC), **Courier** (Pizza City),
+      **Temporary Worker** (Randstad, Brussels),
+      **Warehouse Worker** (IKEA, Ternat),
+      **Kitchen Help** (Restaura, Zaventem) and
+      **Tele-interviewer** (Tele-Performance),
       demonstrating a strong work ethic and adaptability.
 skills:
   'AI & Automation:': >-
