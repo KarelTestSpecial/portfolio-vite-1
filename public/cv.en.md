@@ -13,18 +13,11 @@ workExperience:
       * Developing and maintaining custom web applications for various clients.
 
       * Applying a range of web technologies to meet specific functional requirements.
-  - role: Warehouse Worker
-    company: 'IKEA, Ternat'
-    period: 03/1998 – 01/2001
-    description: >-
-      * Responsible for inventory management and processing of incoming and outgoing goods.
-
-      * Optimizing warehouse operations for maximum efficiency.
   - role: Other Positions
     company: ''
     period: 1994 – 2025
     description: >-
-      Fulfilled various roles as a **Courier**, **Temporary Worker** (Randstad, Brussels), **Kitchen Help** (Restaura, Zaventem) and **Tele-interviewer** (Tele-Performance), **Factory Worker** (Pasec), **Kitchen Help** (Pavilion C), **Clothing Repairer** (De Haven), **Cook** (FPC) which shows a strong work ethic and adaptability.
+      Fulfilled various roles as a **Courier**, **Temporary Worker** (Randstad, Brussels), **Kitchen Help** (Restaura, Zaventem) and **Tele-interviewer** (Tele-Performance), which shows a strong work ethic and adaptability. **Warehouse Worker** at IKEA, Ternat (03/1998 – 01/2001): responsible for inventory management and processing of incoming and outgoing goods. **Factory Worker** (Pasec), **Kitchen Help** (Pavilion C), **Clothing Repairer** (De Haven), **Cook** (FPC).
 skills:
   'AI & Automation:': >-
     Google Gemini, OpenAI ChatGPT, Anthropic Claude, LangChain, Perplexity,
@@ -94,5 +87,9 @@ A selection of personal projects that illustrate my current technical skills. Fo
 * **URL-pulse:** An automated monitoring tool via GitHub Actions that checks and reports the status of URLs.
 * **OCR Combinator:** A tool developed to combine and improve the output of various OCR services.
 * **Vegan BioTech Report:** An automated report that collects and presents data, running on GitHub Actions.
+
+**Publications & Technical Writing**
+
+* **"Sovereign Reality — The Path to Convergence" (Book):** Author of an analytical book on human competence, AI and societal transformation. Published as a bilingual (NL/EN) web application using Docsify on GitHub Pages, including Google Analytics integration and a secured PDF viewer. Read online: [profdrkdc.github.io/boek](https://profdrkdc.github.io/boek/#/)
 
 ---

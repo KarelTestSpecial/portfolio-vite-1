@@ -15,6 +15,14 @@ workExperience:
 
       * Toepassen van een reeks webtechnologieën om te voldoen aan specifieke
       functionele eisen.
+  - role: Andere Functies
+    company: ''
+    period: 04/1994 – 02/1997
+    description: >-
+      Diverse rollen vervuld als **Koerier**, **Uitzendkracht** (Randstad,
+      Brussel), **Keukenhulp** (Restaura, Zaventem) en **Tele-enquêteur**
+      (Tele-Performance), waaruit een sterke werkethiek en aanpassingsvermogen
+      blijkt.  
   - role: Magazijnier
     company: 'IKEA, Ternat'
     period: 03/1998 – 01/2001
@@ -24,14 +32,6 @@ workExperience:
       uitgaande goederen.  
 
       * Optimaliseren van de magazijnwerking voor maximale efficiëntie.
-  - role: Andere Functies
-    company: ''
-    period: 04/1994 – 02/1997
-    description: >-
-      Diverse rollen vervuld als **Koerier**, **Uitzendkracht** (Randstad,
-      Brussel), **Keukenhulp** (Restaura, Zaventem) en **Tele-enquêteur**
-      (Tele-Performance), waaruit een sterke werkethiek en aanpassingsvermogen
-      blijkt.  
   - role: ''
     company: ''
     period: 2001 \ 2025
@@ -79,6 +79,10 @@ Een selectie van persoonlijke projecten die mijn huidige technische vaardigheden
 * **URL-pulse:** Een via GitHub Actions geautomatiseerde monitoringtool die de status van URL's controleert en rapporteert.  
 * **OCR Combinator:** Een tool ontwikkeld om de output van verschillende OCR-diensten te combineren en te verbeteren.  
 * **Vegan BioTech Report:** Een geautomatiseerd rapport dat data verzamelt en presenteert, draaiend op GitHub Actions.
+
+**Publicaties & Technisch Schrijven**
+
+* **"De Vrije Realiteit — De Weg naar Convergentie" (Boek):** Auteur van een analytisch boek over menselijke competentie, AI en maatschappelijke transformatie. Gepubliceerd als een tweetalige (NL/EN) webapplicatie met Docsify op GitHub Pages, inclusief Google Analytics integratie en beveiligde PDF-viewer. Lees online: [profdrkdc.github.io/boek](https://profdrkdc.github.io/boek/#/)
 
 ---
 
