@@ -2,7 +2,7 @@
 name: Karel Decherf
 contact:
   email: karel.decherf@gmail.com
-  linkedin: 'https://www.linkedin.com/in/karel-decherf-8212a9221/'
+  linkedin: 'https://www.linkedin.com/in/karel-decherf-bb0b7140a/'
   github: 'https://github.com/KarelTestSpecial'
   address: ''
 workExperience:
